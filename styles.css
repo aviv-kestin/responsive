@@ -1,0 +1,39 @@
+
+body {
+    background-color: black;
+}
+
+
+@media (min-width: 800px) {
+    .tablet, .mobile {
+        display: none;
+    }
+    .desktop {
+        display: block;
+    }
+}
+
+@media (max-width: 799px) {
+    .desktop, .mobile {
+        display: none;
+    }
+    .tablet {
+        display: block;
+    }
+}
+
+
+@media (max-width: 575px) {
+    .desktop, .tablet {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+}
+
+.imag img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
